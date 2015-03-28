@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="HackDayDemo1.Pages.ViewPersonPage">
+	<ContentPage.Content>
+		<StackLayout Padding="10" Spacing="8">
+			<BoxView HorizontalOptions="FillAndExpand" HeightRequest="5" BackgroundColor="Transparent" ></BoxView> 
+			<Label Text="Person" FontSize="Large"></Label>
+			<BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" BackgroundColor="Black" ></BoxView> 
+
+			<Label Text="{Binding Person.FirstName}"></Label>
+
+			<Label Text="{Binding Person.Surname}"></Label>
+
+			<Label Text="{Binding Person.Age}"></Label>
+
+			<Entry Text="{Binding Person.FirstName}"></Entry>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
